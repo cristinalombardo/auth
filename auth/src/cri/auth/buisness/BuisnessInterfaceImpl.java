@@ -10,7 +10,7 @@ public class BuisnessInterfaceImpl implements BusinessInterface {
 	@Override
 	public String adminOperatio(String ping) {
 		
-		return "Perfor admin operation with ping param: " + ping;
+		return "Admin operation performed. Ping param: " + ping;
 	}
 
 }

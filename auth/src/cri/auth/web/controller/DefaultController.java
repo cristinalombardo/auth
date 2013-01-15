@@ -42,7 +42,7 @@ public class DefaultController {
 		try{
 			result = businessInterface.adminOperatio(pingMessage);
 		}catch(Exception e){
-			result = "Can't perform admin operation: " + e.getMessage(); 
+			result = "Can't perform admin operation: " + e.getMessage() + ". Ping Param: " + pingMessage; 
 		}
 		mav.addObject("aresult", result);
 		return mav;

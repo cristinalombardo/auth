@@ -89,13 +89,19 @@
             
         </div>
       </div>
-      
+      <hr>
        <div class="row">
         <div class="span12">
             <form action="${pageContext.request.contextPath}/sec/sec.html"  method="post" class="form-inline">
             	<input type="text" name="ping" placeholder="PING VALUE" class="input-large">
             	<button type="submit" class="btn btn-primary">Admin operation</button>
             </form>
+            <c:if test="${aresult != null}">
+            	<blockquote>
+            		<p><span class="label label-info">${aresult}</span></p>
+            	</blockquote>
+            </c:if>
+            
         </div>
       </div>
 
