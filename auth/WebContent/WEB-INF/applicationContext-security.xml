@@ -2,12 +2,13 @@
 
 <beans:beans xmlns="http://www.springframework.org/schema/security"
     xmlns:beans="http://www.springframework.org/schema/beans"
-    xmlns:zksp="http://www.zkoss.org/2008/zkspring/security"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd
-                        http://www.zkoss.org/2008/zkspring/security http://www.zkoss.org/2008/zkspring/security/zkspring-security.xsd">
-                        
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                    http://www.springframework.org/schema/security 
+                    http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
      <!--
        - Enable the @Secured annotation to secure service layer methods
        -->                   
@@ -35,15 +36,16 @@
 	
 	<user-service id="userDetailsService" >
 	    <!-- Google account -->
-		<user name="https://www.google.com/accounts/o8/id?id=AItOawmkU3jS0rrWYNUN_BJkQCgGZlMO9x1od_w" disabled="false" authorities="ROLE_ADMIN"/> <!-- distefano.francesco83@gmail.com -->
+		<user name="https://www.google.com/accounts/o8/id?id=AItOawmkU3jS0rrWYNUN_BJkQCgGZlMO9x1od_w" disabled="false" authorities="ROLE_ADMIN"/> <!-- gutente.test@gmail.com -->
 		<user name="https://www.google.com/accounts/o8/id?id=AItOawnwmvLdTkK5LTLKzunLDklRIwyJ7o6f2Cg" disabled="false" authorities="ROLE_ADMIN"/> <!-- lombardo.cristina84@gmail.com -->
 		
 		<!-- JOS account -->
 		<user name="http://localhost:9080/joids/cristina" disabled="false" authorities="ROLE_USER"/>
-		<user name="http://localhost:9080/joids/francesco" disabled="false" authorities="ROLE_USER, ROLE_ADMIN"/>
+		<user name="http://localhost:9080/joids/test" disabled="false" authorities="ROLE_USER, ROLE_ADMIN"/>
 		
 		<!-- Username password auth test/test -->
-		<user name="test" password="9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" authorities="ROLE_USER"/>
+		<user name="user" 	password="9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" authorities="ROLE_USER"/>
+		<user name="admin" 	password="9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" authorities="ROLE_USER"/>
 	</user-service>
 	
 	

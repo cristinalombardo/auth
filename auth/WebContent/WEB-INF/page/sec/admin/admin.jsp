@@ -68,7 +68,7 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Admin</h1>
-        <p>Applicazione di test per differenti meccanismi di autenticazione. </p>
+        <p>In questa pagine può entrare solo l'utente con ROLE_ADMIN</p>
         
       </div>
 

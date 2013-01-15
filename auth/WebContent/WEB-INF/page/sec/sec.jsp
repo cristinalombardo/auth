@@ -89,6 +89,15 @@
             
         </div>
       </div>
+      
+       <div class="row">
+        <div class="span12">
+            <form action="${pageContext.request.contextPath}/sec/sec.html"  method="post" class="form-inline">
+            	<input type="text" name="ping" placeholder="PING VALUE" class="input-large">
+            	<button type="submit" class="btn btn-primary">Admin operation</button>
+            </form>
+        </div>
+      </div>
 
       <hr>
       
