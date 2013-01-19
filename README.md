@@ -6,7 +6,7 @@ Applicazione per l'autenticazione distribuita.
 Sviluppata con eclipse.
 
 Cartella doc
-- Contiene la documatazione del progetto con la spiegazione del protocollo OpenID authentication 2.0
+- Contiene la documentazione del progetto con la spiegazione del protocollo OpenID authentication 2.0
 
 Cartella auth:
 - Progetto sviluppato con Eclipse Juno
